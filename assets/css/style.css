@@ -19,6 +19,22 @@ h6 {
 }
 
 p {
+
   margin: 0;
 }
 
+/* made the nagigation with padding and margin and gaps baseline*/
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 20px;
+  align-items: baseline;
+}
+
+nav{
+  display: flex;
+  flex-grow: 1;
+  justify-content: right;
+  gap:20px;
+}
