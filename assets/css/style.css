@@ -23,13 +23,18 @@ p {
   margin: 0;
 }
 
-/* made the nagigation with padding and margin and gaps baseline*/
-header{
+/* made the nagigation with padding and margin and gaps baseline and header h1*/
+header {
   display: flex;
   flex-direction: row;
   justify-content: left;
   padding: 20px;
   align-items: baseline;
+}
+header h1{
+  background-color: rgb(196, 198, 248);
+  padding: 10px;
+
 }
 
 nav{
@@ -37,4 +42,58 @@ nav{
   flex-grow: 1;
   justify-content: right;
   gap:20px;
+}
+nav a{
+  color: rgb(85, 88, 158);
+  text-decoration: none;
+}
+/*set up the image and text position .hero-banner h2*/
+.hero-banner{
+  background-image: url("../images/02-hero-bg.jpg");
+  height: 500px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  padding: 20px;
+  }
+  .hero-banner h2{
+  background-color: rgb(196, 198, 248);
+  padding: 10px;
+}
+/*setting the about me work and content with the same style and .page-section .content */
+.page-section{
+  grid-template-columns: 20% auto;
+  grid-template-rows: auto;
+  gap: 50px;
+  padding: 50px;
+  display: grid;
+  
+}
+
+.page-section h2{
+}
+.page-section .content{
+}
+
+
+.contact .content{
+  display: flex;
+  flex-flow: row wrap;
+  gap:20px;
+ 
+}
+/* work */
+#work .content {
+ display: flex;
+ flex-wrap: wrap;
+ gap:10px;
+}
+.picture{
+  flex-grow: 1;
+  background-color: brown;
+}
+
+.topone {
+  flex-grow: 1;
+  flex-basis: 100%;
 }
